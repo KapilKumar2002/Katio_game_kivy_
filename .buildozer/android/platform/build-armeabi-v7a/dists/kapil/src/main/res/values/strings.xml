@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Katio</string>
+    <string name="private_version">5efed325e10c2431335662940aded994a19c34e2</string>
+    <string name="presplash_color">#FFFFFF</string>
+    <string name="urlScheme">kivy</string>
+</resources>

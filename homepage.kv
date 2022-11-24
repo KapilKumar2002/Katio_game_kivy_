@@ -1,0 +1,46 @@
+#:import FadeTransition kivy.uix.screenmanager.FadeTransition
+<Homepage>:
+    MDBoxLayout:
+        md_bg_color:237/255, 216/255, 236/255
+        orientation: "vertical"
+        size_hint: 1, 1
+        spacing: dp(100)
+        padding: dp(15), dp(50)
+        MDBoxLayout:
+            md_bg_color: 1,1,1,1
+            size_hint: .5, 1
+            pos_hint: {"center_x":.5}
+            radius: dp(8)
+            MyButton:
+                spacing: dp(10)
+                padding: dp(25)
+                orientation: "vertical"
+                on_release: root.manager.transition = FadeTransition(duration = .1, clearcolor=[1,1,1,1]); root.manager.current = "level1"
+                radius: dp(7)
+                Image:
+                    source: "assets/image1.png"
+                MDLabel:
+                    size_hint: 1, .05
+                    text: "Level 1"
+                    halign: "center"
+                    font_name: "SBpoppins"
+                
+        MDBoxLayout:
+            md_bg_color: 1,1,1,1
+            size_hint: .5, 1
+            pos_hint: {"center_x":.5}
+            radius: dp(8)
+            MyButton:
+                spacing: dp(10)
+                padding: dp(25)
+                orientation: "vertical"
+                on_release: root.manager.transition = FadeTransition(duration = .1, clearcolor=[1,1,1,1]); root.manager.current = "level2"
+                radius: dp(7)
+                Image:
+                    source: "assets/level2.png"
+                MDLabel:
+                    size_hint: 1, .05
+                    text: "Level 2"
+                    halign: "center"
+                    font_name: "SBpoppins"
+                

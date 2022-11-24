@@ -1,0 +1,476 @@
+<Level1>:
+    MDBoxLayout:
+        orientation: "vertical"
+        md_bg_color:200/255, 219/255, 227/255, 0.1
+        MDTopAppBar:
+            title: "Katio"
+            halign: "center"
+            md_bg_color: 51/255, 65/255, 222/255, 1
+            left_action_items: [["arrow-left", lambda x: app.get_home()]]
+        MDBoxLayout:
+            orientation: 'vertical'
+            padding: ('25dp', '30dp', '25dp', '15dp')
+            spacing: '20dp'
+            theme_text_color: "Custom"
+            MDBoxLayout:
+                id: p1
+                size_hint: 1, 0.15
+                md_bg_color: [1,1,0.2,1]
+                orientation: "vertical"
+                radius: dp(7)
+                MDLabel:
+                    text: "Player 1"
+                    color: 0,0,1,1
+                    halign: "center"
+                    font_weight: "bold"
+                    font_size: dp(30)
+                    font_name: 'lcd'
+                    font_weight: "bold"
+                MDBoxLayout:
+                    id: player1
+                    adaptive_width: True
+                    padding: dp(10)
+                    pos_hint: {"center_x": .5}
+                    MDIcon:
+                        id: po11
+                        icon: "circle"
+                        color: p1.md_bg_color
+                    MDIcon:
+                        id: po12
+                        icon: "circle"
+                        color: p1.md_bg_color
+                    MDIcon:
+                        id: po13
+                        icon: "circle"
+                        color: p1.md_bg_color
+                    MDIcon:
+                        id: po14
+                        icon: "circle"
+                        color: p1.md_bg_color
+                    MDIcon:
+                        id: po15
+                        icon: "circle"
+                        color: p1.md_bg_color
+                    MDIcon:
+                        id: po16
+                        icon: "circle"
+                        color: p1.md_bg_color
+                    MDIcon:
+                        id: po17
+                        icon: "circle"
+                        color: p1.md_bg_color
+                    MDIcon:
+                        id: po18
+                        icon: "circle"
+                        color: p1.md_bg_color
+                    MDIcon:
+                        id: po19
+                        icon: "circle"
+                        color: p1.md_bg_color
+                    MDIcon:
+                        id: po110
+                        icon: "circle"
+                        color: p1.md_bg_color
+                    MDIcon:
+                        id: po111
+                        icon: "circle"
+                        color: p1.md_bg_color
+                    MDIcon:
+                        id: po112
+                        icon: "circle"
+                        color: p1.md_bg_color
+            MDRelativeLayout:
+                size_hint: 1, .5
+                canvas:
+                    Color:
+                        rgba: 5/255, 247/255, 247/255,1
+                    Line:
+                        points: 0,0,self.width,0,self.width,self.height,0,self.height,0,0, self.width,self.height    
+                        width: dp(2.5)
+                    Line:
+                        points: 0,self.height,self.width,0 
+                        width: dp(2.5)
+                    Line:
+                        points: self.width/2,self.height,self.width/2,0  
+                        width: dp(2.5)
+                    Line:
+                        points: self.width/4,self.height,self.width/4,0  
+                        width: dp(2.5)
+                    Line:
+                        points: 0,self.height/2,self.width, self.height/2
+                        width: dp(2.5)
+                    Line:
+                        points: 0,self.height/2+self.height/4,self.width, self.height/2+self.height/4
+                        width: dp(2.5)
+                    Line:
+                        points: 0,self.height/4,self.width, self.height/4
+                        width: dp(2.5)
+                    Line:
+                        points: self.width/2+self.width/4,self.height,self.width/2+self.width/4, 0
+                        width: dp(2.5)
+                    Line:
+                        points: 0,self.height/2,self.width/2,self.height,self.width,self.height/2,self.width/2,0,0,self.height/2
+                        width: dp(2.5)
+                
+                MDIconButton:
+                    id: p11
+                    icon: "circle"
+                    pos_hint: {"center_x": 0, "center_y": 1}
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    on_release:  
+                        if self.icon == "circle": root.player1(p11) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p12
+                    icon: "circle"
+                    pos_hint: {"center_x": 0.25, "center_y": 1}
+                    text_color: 1,0,0,1
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    on_release: 
+                        if self.icon == "circle": root.player1(p12) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p13
+                    icon: "circle"
+                    pos_hint: {"center_x": 0.5, "center_y": 1}
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    on_release: 
+                        if self.icon == "circle": root.player1(p13) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p14
+                    icon: "circle"
+                    pos_hint: {"center_x": 0.75, "center_y": 1}
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    on_release: 
+                        if self.icon == "circle": root.player1(p14) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p15
+                    icon: "circle"
+                    pos_hint: {"center_x": 1, "center_y": 1}
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    on_release: 
+                        if self.icon == "circle": root.player1(p15) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p16
+                    icon: "circle"
+                    pos_hint: {"center_x": 0, "center_y": 0.75}
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    on_release: 
+                        if self.icon == "circle": root.player1(p16) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p17
+                    icon: "circle"
+                    pos_hint: {"center_x": 0.25, "center_y": 0.75}
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    on_release: 
+                        if self.icon == "circle": root.player1(p17) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p18
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    icon: "circle"
+                    pos_hint: {"center_x": .5, "center_y": 0.75}
+                    on_release: 
+                        if self.icon == "circle": root.player1(p18) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p19
+                    icon: "circle"
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    pos_hint: {"center_x": 0.75, "center_y": 0.75}
+                    on_release: 
+                        if self.icon == "circle": root.player1(p19) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p110
+                    icon: "circle"
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    pos_hint: {"center_x": 1, "center_y": 0.75}
+                    on_release: 
+                        if self.icon == "circle": root.player1(p110) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p111
+                    icon: "circle"
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    pos_hint: {"center_x": 0.75, "center_y": 0.5}
+                    on_release: 
+                        if self.icon == "circle": root.player1(p111) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p112
+                    icon: "circle"
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    pos_hint: {"center_x": 1, "center_y": 0.5}
+                    on_release: 
+                        if self.icon == "circle": root.player1(p112) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p21
+                    icon: "circle"
+                    pos_hint: {"center_x": 0, "center_y": 0}
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    on_release: 
+                        if self.icon == "circle": root.player2(p21) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p22
+                    icon: "circle"
+                    pos_hint: {"center_x": 0.25, "center_y": 0}
+                    text_color: 1,0,0,1
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    on_release: 
+                        if self.icon == "circle": root.player2(p22) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p23
+                    icon: "circle"
+                    pos_hint: {"center_x": 0.5, "center_y": 0}
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    on_release: 
+                        if self.icon == "circle": root.player2(p23) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p24
+                    icon: "circle"
+                    pos_hint: {"center_x": 0.75, "center_y": 0}
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    on_release: 
+                        if self.icon == "circle": root.player2(p24) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p25
+                    icon: "circle"
+                    pos_hint: {"center_x": 0, "center_y": 0.25}
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    on_release: 
+                        if self.icon == "circle": root.player2(p25) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p26
+                    icon: "circle"
+                    pos_hint: {"center_x": 0.25, "center_y": 0.25}
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    on_release: 
+                        if self.icon == "circle": root.player2(p26) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p27
+                    icon: "circle"
+                    pos_hint: {"center_x": 0.5, "center_y": 0.25}
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    on_release: 
+                        if self.icon == "circle": root.player2(p27) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p28
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    icon: "circle"
+                    pos_hint: {"center_x": .75, "center_y": 0.25}
+                    on_release: 
+                        if self.icon == "circle": root.player2(p28) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p29
+                    icon: "circle"
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    pos_hint: {"center_x": 1, "center_y": 0.25}
+                    on_release: 
+                        if self.icon == "circle": root.player2(p29) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p210
+                    icon: "circle"
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    pos_hint: {"center_x": 0, "center_y": 0.5}
+                    on_release: 
+                        if self.icon == "circle": root.player2(p210) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p211
+                    icon: "circle"
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    pos_hint: {"center_x": .25, "center_y": 0.5}
+                    on_release: 
+                        if self.icon == "circle": root.player2(p211) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p212
+                    icon: "circle"
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    pos_hint: {"center_x": 1, "center_y": 0}
+                    on_release: 
+                        if self.icon == "circle": root.player2(p212) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    icon: "record-circle"
+                    id: common10
+                    name: "none"
+                    theme_text_color: "Custom"
+                    pos_hint: {"center_x":.5, "center_y": .5}
+                    text_color: 0,0.2,0.21,0.31
+                    on_release: if self.text_color == [245/255, 5/255, 237/255,1]: root.shift(self)
+            MDBoxLayout:
+                id: p2
+                size_hint: 1, 0.15
+                md_bg_color: [1,1,0.2,1]
+                orientation: "vertical"
+                padding: dp(10)
+                spacing: dp(10)
+                radius: dp(7)
+                MDBoxLayout:
+                    id: player2
+                    adaptive_width: True                    
+                    pos_hint: {"center_x": .5}
+                    MDIcon:
+                        id: po21
+                        icon: "circle"
+                        color: p2.md_bg_color
+                    MDIcon:
+                        id: po22
+                        icon: "circle"
+                        color: p2.md_bg_color
+                    MDIcon:
+                        id: po23
+                        icon: "circle"
+                        color: p2.md_bg_color
+                    MDIcon:
+                        id: po24
+                        icon: "circle"
+                        color: p2.md_bg_color
+                    MDIcon:
+                        id: po25
+                        icon: "circle"
+                        color: p2.md_bg_color
+                    MDIcon:
+                        id: po26
+                        icon: "circle"
+                        color: p2.md_bg_color
+                    MDIcon:
+                        id: po27
+                        icon: "circle"
+                        color: p2.md_bg_color
+                    MDIcon:
+                        id: po28
+                        icon: "circle"
+                        color: p2.md_bg_color
+                    MDIcon:
+                        id: po29
+                        icon: "circle"
+                        color: p2.md_bg_color
+                    MDIcon:
+                        id: po210
+                        icon: "circle"
+                        color: p2.md_bg_color
+                    MDIcon:
+                        id: po211
+                        icon: "circle"
+                        color: p2.md_bg_color
+                    MDIcon:
+                        id: po212
+                        icon: "circle"
+                        color: p2.md_bg_color
+                MDLabel:
+                    text: "Player 2"
+                    color: 1,0,0,1
+                    halign: "center"
+                    font_weight: "bold"
+                    font_size: dp(30)
+                    font_name: 'lcd'
+                    font_weight: "bold"
+            MDBoxLayout:
+                size_hint: 1, .1
+                MDBoxLayout:
+                    orientation: "vertical"
+                    MDIconButton:
+                        id: playb
+                        icon: "pause"
+                        on_release: root.switching()
+                        pos_hint: {"center_x":.5}
+                        ripple_scale: 0
+                        
+                MDBoxLayout:
+                    orientation: "vertical"
+                    MDIconButton:
+                        id: restore
+                        icon: "restore"
+                        pos_hint: {"center_x": .5}
+                        ripple_scale: 0
+                        on_release: root.restore()
+
+<MyIcon>:
+    adaptive_width: True
+
+    MDIcon:
+        icon: "circle"   
+        color: root.color
+<GameFinishMessage>:
+    orientation: "vertical"
+    spacing: dp(15)
+    size_hint: 1, None
+    height: dp(180)
+    padding: dp(25)
+    MDLabel:
+        text: "Katio"
+        halign: "center"
+        font_weight: "bold"
+        font_size: dp(30)
+        font_name: "Bpoppins"
+        color: 41/255, 227/255, 196/255
+    MDIcon:
+        icon: "account"
+        theme_text_color: "Custom"
+        text_color: root.color 
+        font_size: dp(40)
+        pos_hint: {"center_x": .5}
+    MDBoxLayout:
+        pos_hint: {"center_x": .5}
+        spacing: dp(8)
+        MDIcon:
+            icon: "circle"
+            theme_text_color: "Custom"
+            text_color: root.color 
+            font_size: dp(25)
+        MDLabel:
+            text: root.textp
+            color: 26/255, 33/255, 219/255  
+            font_weight: "bold"
+            font_size: dp(20)
+            font_name: "Bpoppins"
+            color: 41/255, 227/255, 196/255 
+            halign: "center"
+        MDIcon:
+            icon: "glass-wine"
+            theme_text_color: "Custom"
+            text_color: root.color
+            font_size: dp(45)
+    
+    

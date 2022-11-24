@@ -1,0 +1,731 @@
+<Level2>:
+    MDBoxLayout:
+        orientation: "vertical"
+        md_bg_color:200/255, 219/255, 227/255, 0.1
+        MDTopAppBar:
+            title: "Katio"
+            halign: "center"
+            md_bg_color: 51/255, 65/255, 222/255, 1
+            left_action_items: [["arrow-left", lambda x: app.get_home()]]
+        MDBoxLayout:
+            orientation: 'vertical'
+            padding: ('25dp', '20dp', '25dp', '15dp')
+            spacing: '20dp'
+            theme_text_color: "Custom"
+            MDBoxLayout:
+                id: p1
+                size_hint: 1, 0.14
+                md_bg_color: [1,1,0.2,1]
+                orientation: "vertical"
+                radius: dp(7)
+                MDLabel:
+                    text: "Player 1"
+                    color: 0,0,1,1
+                    halign: "center"
+                    font_weight: "bold"
+                    font_size: dp(30)
+                    font_weight: "bold"
+                MDBoxLayout:
+                    id: player1
+                    adaptive_width: True
+                    padding: dp(10)
+                    pos_hint: {"center_x": .5}
+                    MDIcon:
+                        id: po11
+                        icon: "account"
+                        color: p1.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po12
+                        icon: "account"
+                        color: p1.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po13
+                        icon: "account"
+                        color: p1.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po14
+                        icon: "account"
+                        color: p1.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po15
+                        icon: "account"
+                        color: p1.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po16
+                        icon: "account"
+                        color: p1.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po17
+                        icon: "account"
+                        color: p1.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po18
+                        icon: "account"
+                        color: p1.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po19
+                        icon: "account"
+                        color: p1.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po110
+                        icon: "account"
+                        color: p1.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po111
+                        icon: "account"
+                        color: p1.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po112
+                        icon: "account"
+                        color: p1.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po113
+                        icon: "account"
+                        color: p1.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po114
+                        icon: "account"
+                        color: p1.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po115
+                        icon: "account"
+                        color: p1.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po116
+                        icon: "account"
+                        color: p1.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po117
+                        icon: "account"
+                        color: p1.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po118
+                        icon: "account"
+                        color: p1.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po119
+                        icon: "account"
+                        color: p1.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po120
+                        icon: "account"
+                        color: p1.md_bg_color
+                        font_size: dp(15)
+
+            MDRelativeLayout:
+                size_hint: .7, .7
+                pos_hint: {"center_x": 0.5, "center_y": .5}
+                canvas:
+                    Color:
+                        rgb: 174/255, 5/255, 252/255
+                    Line:
+                        points: 0,0,self.width/2,self.height/4,self.width, self.height/4,self.width, 3*self.height/4, self.width/2, 3*self.height/4, 0, self.height, self.width, self.height, self.width/2, 3*self.height/4, 0,3*self.height/4, 0,self.height/4, self.width/2, self.height/4, self.width, 0, 0, 0
+                        width: dp(2)
+                    Line:
+                        points: 0,self.height/2,self.width,self.height/2
+                        width: dp(2)
+                    Line:
+                        points: self.width/2,self.height/4,0,self.height/2,self.width/2,3*self.height/4,self.width, self.height/2,self.width/2,self.height/4
+                        width: dp(2)
+                    Line:
+                        points: self.width/2,0,self.width/2,self.height
+                        width: dp(2)
+                    Line:
+                        points: self.width/4,3*self.height/4,self.width/4,self.height/4
+                        width: dp(2)
+                    Line:
+                        points: 3*self.width/4,3*self.height/4,3*self.width/4,self.height/4
+                        width: dp(2)
+                    Line:
+                        points: self.width/4,0,self.width/4,self.height/8,3*self.width/4,self.height/8,3*self.width/4,0
+                        width: dp(2)
+                    Line:
+                        points: self.width/4,self.height,self.width/4,7*self.height/8,3*self.width/4,7*self.height/8,3*self.width/4,self.height
+                        width: dp(2)
+                    Line:
+                        points: 0,3*self.height/8,self.width,3/8*self.height
+                        width: dp(2)
+                    Line:
+                        points: 0,5*self.height/8,self.width, 5*self.height/8
+                        width: dp(2)
+                    Line:
+                        points: 0,self.height/4,self.width,3*self.height/4
+                        width: dp(2)
+                    Line:
+                        points: self.width,self.height/4,0,3*self.height/4
+                        width: dp(2)
+                    Line:
+                        points: self.width/4,self.height/8,self.width/2,0, 3*self.width/4,self.height/8
+                        width: dp(2)
+                    Line:
+                        points: self.width/4,7*self.height/8,self.width/2,self.height,3*self.width/4,7*self.height/8
+                        width: dp(2)
+                MDIconButton:
+                    id: p11
+                    icon: "account"
+                    pos_hint: {"center_x":0,"center_y":1}
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    on_release:  
+                        if self.icon == "account": root.player1(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p12
+                    icon: "account"
+                    pos_hint: {"center_x":.25,"center_y":1}
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    on_release:  
+                        if self.icon == "account": root.player1(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p13
+                    icon: "account"
+                    pos_hint: {"center_x":0.5,"center_y":1}
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    on_release:  
+                        if self.icon == "account": root.player1(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p14
+                    icon: "account"
+                    pos_hint: {"center_x":.75,"center_y":1}
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    on_release:  
+                        if self.icon == "account": root.player1(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p15
+                    icon: "account"
+                    pos_hint: {"center_x":1,"center_y":1}
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    on_release:  
+                        if self.icon == "account": root.player1(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p16
+                    icon: "account"
+                    pos_hint: {"center_x":0.25,"center_y":7/8}
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    on_release:  
+                        if self.icon == "account": root.player1(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p17
+                    icon: "account"
+                    pos_hint: {"center_x":.5,"center_y":7/8}
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    on_release:  
+                        if self.icon == "account": root.player1(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p18
+                    icon: "account"
+                    pos_hint: {"center_x":0.75,"center_y":7/8}
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    on_release:  
+                        if self.icon == "account": root.player1(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p19
+                    icon: "account"
+                    pos_hint: {"center_x":0,"center_y":3/4}
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    on_release:  
+                        if self.icon == "account": root.player1(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p110
+                    icon: "account"
+                    pos_hint: {"center_x":.25,"center_y":3/4}
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    on_release:  
+                        if self.icon == "account": root.player1(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p111
+                    icon: "account"
+                    pos_hint: {"center_x":0.5,"center_y":3/4}
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    on_release:  
+                        if self.icon == "account": root.player1(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p112
+                    icon: "account"
+                    pos_hint: {"center_x":.75,"center_y":3/4}
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    on_release:  
+                        if self.icon == "account": root.player1(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p113
+                    icon: "account"
+                    pos_hint: {"center_x":1,"center_y":3/4}
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    on_release:  
+                        if self.icon == "account": root.player1(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p114
+                    icon: "account"
+                    pos_hint: {"center_x":0,"center_y":5/8}
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    on_release:  
+                        if self.icon == "account": root.player1(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p115
+                    icon: "account"
+                    pos_hint: {"center_x":0.25,"center_y":5/8}
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    on_release:  
+                        if self.icon == "account": root.player1(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p116
+                    icon: "account"
+                    pos_hint: {"center_x":.5,"center_y":5/8}
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    on_release:  
+                        if self.icon == "account": root.player1(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p117
+                    icon: "account"
+                    pos_hint: {"center_x":0.75,"center_y":5/8}
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    on_release:  
+                        if self.icon == "account": root.player1(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p118
+                    icon: "account"
+                    pos_hint: {"center_x":1,"center_y":5/8}
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    on_release:  
+                        if self.icon == "account": root.player1(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p119
+                    icon: "account"
+                    pos_hint: {"center_x":0.75,"center_y":.5}
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    on_release:  
+                        if self.icon == "account": root.player1(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p120
+                    icon: "account"
+                    pos_hint: {"center_x":1,"center_y":.5}
+                    theme_text_color: "Custom"
+                    text_color: root.player1_color
+                    on_release:  
+                        if self.icon == "account": root.player1(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p21
+                    icon: "account"
+                    pos_hint: {"center_x":0,"center_y":0}
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    on_release:  
+                        if self.icon == "account": root.player2(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p22
+                    icon: "account"
+                    pos_hint: {"center_x":.25,"center_y":0}
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    on_release:  
+                        if self.icon == "account": root.player2(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p23
+                    icon: "account"
+                    pos_hint: {"center_x":0.5,"center_y":0}
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    on_release:  
+                        if self.icon == "account": root.player2(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p24
+                    icon: "account"
+                    pos_hint: {"center_x":.75,"center_y":0}
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    on_release:  
+                        if self.icon == "account": root.player2(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p25
+                    icon: "account"
+                    pos_hint: {"center_x":1,"center_y":0}
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    on_release:  
+                        if self.icon == "account": root.player2(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p26
+                    icon: "account"
+                    pos_hint: {"center_x":0.25,"center_y":1/8}
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    on_release:  
+                        if self.icon == "account": root.player2(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p27
+                    icon: "account"
+                    pos_hint: {"center_x":.5,"center_y":1/8}
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    on_release:  
+                        if self.icon == "account": root.player2(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p28
+                    icon: "account"
+                    pos_hint: {"center_x":0.75,"center_y":1/8}
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    on_release:  
+                        if self.icon == "account": root.player2(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p29
+                    icon: "account"
+                    pos_hint: {"center_x":0,"center_y":1/4}
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    on_release:  
+                        if self.icon == "account": root.player2(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p210
+                    icon: "account"
+                    pos_hint: {"center_x":.25,"center_y":1/4}
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    on_release:  
+                        if self.icon == "account": root.player2(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p211
+                    icon: "account"
+                    pos_hint: {"center_x":0.5,"center_y":1/4}
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    on_release:  
+                        if self.icon == "account": root.player2(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p212
+                    icon: "account"
+                    pos_hint: {"center_x":.75,"center_y":1/4}
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    on_release:  
+                        if self.icon == "account": root.player2(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p213
+                    icon: "account"
+                    pos_hint: {"center_x":1,"center_y":1/4}
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    on_release:  
+                        if self.icon == "account": root.player2(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p214
+                    icon: "account"
+                    pos_hint: {"center_x":0,"center_y":3/8}
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    on_release:  
+                        if self.icon == "account": root.player2(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p215
+                    icon: "account"
+                    pos_hint: {"center_x":0.25,"center_y":3/8}
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    on_release:  
+                        if self.icon == "account": root.player2(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p216
+                    icon: "account"
+                    pos_hint: {"center_x":.5,"center_y":3/8}
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    on_release:  
+                        if self.icon == "account": root.player2(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p217
+                    icon: "account"
+                    pos_hint: {"center_x":0.75,"center_y":3/8}
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    on_release:  
+                        if self.icon == "account": root.player2(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p218
+                    icon: "account"
+                    pos_hint: {"center_x":1,"center_y":3/8}
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    on_release:  
+                        if self.icon == "account": root.player2(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p219
+                    icon: "account"
+                    pos_hint: {"center_x":0,"center_y":.5}
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    on_release:  
+                        if self.icon == "account": root.player2(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: p220
+                    icon: "account"
+                    pos_hint: {"center_x":0.25,"center_y":.5}
+                    theme_text_color: "Custom"
+                    text_color: root.player2_color
+                    on_release:  
+                        if self.icon == "account": root.player2(self) 
+                        elif self.text_color == [245/255, 5/255, 237/255,1] : root.shift(self)
+                MDIconButton:
+                    id: common10
+                    icon: "record-circle"
+                    pos_hint: {"center_x":.5,"center_y":.5}
+                    theme_text_color: "Custom"
+                    text_color: 0,0.21,0.21,0.41
+                    on_release: if self.text_color == [245/255, 5/255, 237/255,1]: root.shift(self)
+                    
+            MDBoxLayout:
+                id: p2
+                size_hint: 1, 0.14
+                md_bg_color: [1,1,0.2,1]
+                orientation: "vertical"
+                padding: dp(10)
+                spacing: dp(10)
+                radius: dp(7)
+                MDBoxLayout:
+                    id: player2
+                    adaptive_width: True                    
+                    pos_hint: {"center_x": .5}
+
+                    MDIcon:
+                        id: po21
+                        icon: "account"
+                        color: p2.md_bg_color
+                        font_size: dp(10)
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po22
+                        icon: "account"
+                        color: p2.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po23
+                        icon: "account"
+                        color: p2.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po24
+                        icon: "account"
+                        color: p2.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po25
+                        icon: "account"
+                        color: p2.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po26
+                        icon: "account"
+                        color: p2.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po27
+                        icon: "account"
+                        color: p2.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po28
+                        icon: "account"
+                        color: p2.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po29
+                        icon: "account"
+                        color: p2.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po210
+                        icon: "account"
+                        color: p2.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po211
+                        icon: "account"
+                        color: p2.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po212
+                        icon: "account"
+                        color: p2.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po213
+                        icon: "account"
+                        color: p2.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po214
+                        icon: "account"
+                        color: p2.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po215
+                        icon: "account"
+                        color: p2.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po216
+                        icon: "account"
+                        color: p2.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po217
+                        icon: "account"
+                        color: p2.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po218
+                        icon: "account"
+                        color: p2.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po219
+                        icon: "account"
+                        color: p2.md_bg_color
+                        font_size: dp(15)
+                    MDIcon:
+                        id: po220
+                        icon: "account"
+                        color: p2.md_bg_color
+                        font_size: dp(15)
+                MDLabel:
+                    text: "Player 2"
+                    color: 1,0,0,1
+                    halign: "center"
+                    font_weight: "bold"
+                    font_size: dp(30)
+                    font_weight: "bold"
+            MDBoxLayout:
+                size_hint: 1, .035
+                MDBoxLayout:
+                    orientation: "vertical"
+                    MDIconButton:
+                        id: playb
+                        icon: "pause"
+                        on_release: root.switching()
+                        pos_hint: {"center_x":.5}
+                        ripple_scale: 0
+                        
+                MDBoxLayout:
+                    orientation: "vertical"
+                    MDIconButton:
+                        id: restore
+                        icon: "restore"
+                        pos_hint: {"center_x": .5}
+                        ripple_scale: 0
+                        on_release: root.restore()
+<GameFinishMessage>:
+    orientation: "vertical"
+    spacing: dp(15)
+    size_hint: 1, None
+    height: dp(180)
+    padding: dp(25)
+    MDLabel:
+        text: "Katio"
+        halign: "center"
+        font_weight: "bold"
+        font_size: dp(30)
+        font_name: "Bpoppins"
+        color: 41/255, 227/255, 196/255
+    MDIcon:
+        icon: "account"
+        theme_text_color: "Custom"
+        text_color: root.color 
+        font_size: dp(40)
+        pos_hint: {"center_x": .5}
+    MDBoxLayout:
+        pos_hint: {"center_x": .5}
+        spacing: dp(8)
+        MDIcon:
+            icon: "account"
+            theme_text_color: "Custom"
+            text_color: root.color 
+            font_size: dp(25)
+        MDLabel:
+            text: root.textp
+            color: 26/255, 33/255, 219/255  
+            font_weight: "bold"
+            font_size: dp(20)
+            font_name: "Bpoppins"
+            color: 41/255, 227/255, 196/255 
+            halign: "center"
+        MDIcon:
+            icon: "glass-wine"
+            theme_text_color: "Custom"
+            text_color: root.color
+            font_size: dp(45)
+    
+    

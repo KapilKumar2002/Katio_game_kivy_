@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/keps/VScodeProjects/Katio/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/jconfig.h
+
+/home/keps/VScodeProjects/Katio/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/jinclude.h
+jconfig.h
+/home/keps/VScodeProjects/Katio/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/jconfig.h
+stddef.h
+-
+stdlib.h
+-
+sys/types.h
+-
+stdio.h
+-
+strings.h
+-
+string.h
+-
+
+/home/keps/VScodeProjects/Katio/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/wrjpgcom.c
+jinclude.h
+/home/keps/VScodeProjects/Katio/.buildozer/android/platform/build-armeabi-v7a/build/other_builds/jpeg/armeabi-v7a__ndk_target_21/jpeg/jinclude.h
+ctype.h
+-
+fcntl.h
+-
+io.h
+-
+SIOUX.h
+-
+console.h
+-
+console.h
+-
+
